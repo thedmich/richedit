@@ -1,0 +1,311 @@
+.managedObject > div.properties div.managedProperty[key='content'] div.fieldContainer div.field div.outer div.inner 
+{
+	padding: 0;
+}
+
+div.richedit 
+{
+	border:1px solid #d6d6d6;
+	border-radius: 3px;
+	overflow: hidden;
+	height: 400px;
+}
+
+div.richedit div.contentContainer
+{
+	padding: 10px 17px;
+	overflow-y: auto;
+	height: 343px;
+	color: #666666;
+	font: 14px/19px Verdana, serif;
+}
+
+div.richeditPasteBuffer
+{
+	position: fixed;
+	top: 0;
+	left: -1000px;
+	width: 100px;
+	height: 100px;
+	z-index: 43;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+
+div.richedit div.contentContainer h6.heading
+{
+	display: block;
+	font-size: 1.65em;
+	line-height: 1.3em;
+	margin-bottom: 0.83em;
+	font-weight: normal;
+}
+
+div.richedit div.contentContainer div.section > h6.heading
+{
+	display: block;
+	font-size: 1.45em;
+	line-height: 1.3em;
+	margin: 0.9em 0 0.29em;
+}
+
+div.richedit div.contentContainer div.section > div.section > h6.heading
+{
+	display: block;
+	font-size: 1.25em;
+	line-height: 1.3em;
+	margin: 1.1em 0 0.37em;
+}
+
+div.richedit div.contentContainer div.section > div.section > div.section > h6.heading
+{
+	display: block;
+	font-size: 1.1em;
+	line-height: 1.3em;
+	font-weight: bold;
+	margin: 1.2em 0 0.45em;
+	color: #616161;
+}
+
+div.richedit div.contentContainer p,
+div.richedit div.contentContainer ol, 
+div.richedit div.contentContainer ul 
+{
+	margin: 0.95em 0 0.95em;
+}
+
+div.richedit div.contentContainer span[nodetype="escape"]
+{
+	display: none;
+}
+
+div.richedit div#toolbar
+{
+	background: #f6f6f6;
+	border-radius: 0;
+	border: 0;
+	padding: 5px 10px;
+}
+
+div.richedit div#toolbar button
+{
+	width: 28px;
+	height: 28px;
+	border: 0;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+	background: 0;
+}
+
+div.richedit div#toolbar button.pressed
+{
+	background: #f8f8f8;
+	outline: 1px solid #969696;
+}
+
+div.richedit div#toolbar button span
+{
+	display: block;
+	width: 100%;
+	height: 28px;
+	color: transparent;
+	overflow: hidden;
+	background: url('/.style/standard/xhtml/richedit/images/richedit.svg');
+	background-repeat: no-repeat;
+	background-size: 518px 84px;
+	-o-background-size: 518px 84px;
+	background-position: 0px 0px;
+	padding: 0;
+}
+
+div.richedit div#toolbar button[name='undo'] span
+{
+	background: url('/.style/standard/xhtml/richedit/images/undo.png') no-repeat center center;
+}
+
+div.richedit div#toolbar button[name='redo'] span
+{
+	background: url('/.style/standard/xhtml/richedit/images/redo.png') no-repeat center center;
+}
+
+div.richedit div#toolbar button[name='undo'].ui-state-disabled,
+div.richedit div#toolbar button[name='redo'].ui-state-disabled
+{
+	opacity: 0.5;
+}
+
+div.richedit div#toolbar button.ui-state-disabled
+{
+	opacity: 1;
+	filter: Alpha(Opacity=100);
+}
+
+div.richedit div#toolbar button[name='paragraph'] span
+{
+	background-position: -3px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='paragraph'] span
+{
+	background-position: -3px -28px;
+}
+
+div.richedit div#toolbar button[name='heading'] span
+{
+	background-position: -35px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='heading'] span
+{
+	background-position: 35px -28px;
+}
+
+div.richedit div#toolbar button[name='raiseSection'] span
+{
+	background-position: -67px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='raiseSection'] span
+{
+	background-position: -67px -28px;
+}
+
+div.richedit div#toolbar button[name='lowerSection'] span
+{
+	background-position: -99px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='lowerSection'] span
+{
+	background-position: -99px -28px;
+}
+
+div.richedit div#toolbar button[name='newLine']
+{
+	display: none;
+}
+
+div.richedit div#toolbar button[name='table']
+{
+	display: none;
+}
+
+div.richedit div#toolbar button[name='unorderedList'] span
+{
+	background-position: -132px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='unorderedList'] span
+{
+	background-position: -132px -28px;
+}
+
+div.richedit div#toolbar button[name='orderedList'] span
+{
+	background-position: -165px 0px;
+}	
+
+div.richedit div#toolbar button.ui-state-disabled[name='orderedList'] span
+{
+	background-position: -165px -28px;
+}	
+
+div.richedit div#toolbar button[name='bold'] span
+{
+	background-position: -196px 0px;
+}	
+
+div.richedit div#toolbar button.ui-state-disabled[name='bold'] span
+{
+	background-position: -196px -28px;
+}	
+
+div.richedit div#toolbar button[name='cursive'] span
+{
+	background-position: -229px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='cursive'] span
+{
+	background-position: -229px -28px;
+}		
+
+div.richedit div#toolbar button[name='link'] span
+{
+	background-position: -261px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='link'] span
+{
+	background-position: -261px -28px;
+}
+
+div.richedit div#toolbar button[name='cut'] span
+{
+	background-position: -293px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='cut'] span
+{
+	background-position: -293px -28px;
+}
+
+div.richedit div#toolbar button[name='copy'] span
+{
+	background-position: -326px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='copy'] span
+{
+	background-position: -326px -28px;
+}
+
+div.richedit div#toolbar button[name='paste'] span
+{
+	background-position: -358px 0px;
+}
+
+div.richedit div#toolbar button.ui-state-disabled[name='paste'] span
+{
+	background-position: -358px -28px;
+}
+
+div.richedit div#toolbar .ui-buttonset 
+{
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	border-radius: 3px;
+}
+
+div.richedit div.contentContainer table td
+{
+	white-space: normal !important;
+}
+
+div.richedit div.contentContainer ol
+{
+	list-style: decimal;
+	margin-left: 21px;
+}
+
+div.managedProperty[key="content"] div.field div.outer,
+div.managedProperty[key="description"] div.field div.outer
+{
+	border: 0;
+}
+
+div.managedProperty[key="content"] div.field div.inner,
+div.managedProperty[key="description"] div.field div.inner
+{
+	padding: 0;
+}
+
+div.managedProperty[key="content"] div.field .resizer,
+div.managedProperty[key="description"] div.field .resizer
+{
+    margin-left: 0px;
+}
